@@ -1,22 +1,7 @@
-terminate_program = False
-while not terminate_program:
-    number1 = input("Please enter a number: ")
-    number1 = int(number1)
-    number2 = input("Please enter another number: ")
-    number2 = int(number2)
+def myfnc(y):
+    print("y = ", y)
+    print("x = ", x)
 
-    while True:
-        operation = input("Please enter add/sub or quit to exit: ")
 
-        if operation == "quit":
-            terminate_program = True
-            break
-        if operation not in ["add", "sub"]:
-            print("Unknown operation!")
-            continue
-        if operation == "add":
-            print("Result is", number1 + number2)
-            break
-        if operation == "sub":
-            print("Result is", number1 - number2)
-            break
+x = 20
+myfnc(x)
